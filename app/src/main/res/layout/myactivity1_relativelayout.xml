@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_Setupurplan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:text="Setup your plan"
+        android:textSize="22sp"/>
+    <TextView
+        android:id="@+id/changesettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Setupurplan"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="You can change this any time in the settings"
+        android:textSize="18sp"/>
+    <RelativeLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_card_1"
+        android:layout_below="@+id/changesettings"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pie_chart_img"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/setupwizard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setup wizard"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+        <View
+            android:id="@+id/underline"
+            android:layout_width="200dp"
+            android:layout_height="3dp"
+            android:layout_below="@+id/setupwizard"
+            android:background="#ffff"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RECOMENDED"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/underline"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/layout_1"
+        android:background="@drawable/bg_card_2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/equilizer"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"/>
+
+
+        <TextView
+            android:id="@+id/Start_from_scratch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start From Scratch"
+        android:textSize="20sp"
+        android:textColor="#ffff" />
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/Start_from_scratch"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#ffffff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOR EXPERTS"
+            android:layout_below="@+id/view_2"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/layout_2"
+        android:background="@drawable/bg_card_3"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/note"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/templates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Templates"
+        android:textSize="20sp"
+        android:textColor="#ffffff"/>
+        <View
+            android:id="@+id/view_3"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/templates"
+            android:background="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOR COMPLETE BEGINNERS"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/view_3"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
